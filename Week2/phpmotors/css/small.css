@@ -12,15 +12,16 @@
 }
 
 html {
-    background-image: url('../images/site/checkerboard.jpg;');
+    background-image: url('/Week2/phpmotors/images/site/checkerboard.jpg');
     background-size: 250px;
     background-position: right top;
 }
 
 body {
+
     max-width: 1100px;
     margin: 0 auto;
-    background-color: var(--whtie);
+    background-color: var(--white);
     border: 5px solid var(--blue);
     border-radius: 10px;
     box-shadow: 0 0 15px var(--blue);
@@ -28,6 +29,12 @@ body {
 
 h1 {
     font-family: 'Limelight', cursive;
+}
+h2 {
+    font-family: 'Limelight', cursive;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
 }
 
 nav {
@@ -55,36 +62,48 @@ main {
     padding: 5px;
 }
 
-main .extras {
-    float: left;
+.extras {
+    position: absolute;
     color: var(--blue);
 }
 
-main ul li{
+ul li{
    list-style-type: none;
 }
 
-main .upgrades {
-    max-width: 50%;
-    font-size: 1.5rem;
+.upgrades {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+.upgrades img {
+background-color: var(--blue);
 }
 
-main .reviews {
-    max-width: 50%;
+.reviews {
+    align-content: space-between;
+    font-size: 1.2rem;
 }
 
-main figure.delorean img {
-    width: 100%;
+.reviews li {
+    list-style-type:disc;
+}
+
+.middle {
+    display: flex;
+    flex-flow: column;
 }
 
 img {
     margin: 2px;
     padding: 2px;
+    z-index: -1;
 }
 
 main button {
     background-color: var(--blue);
-    color: var(--whtie);
+    color: var(--white);
     border: solid 1px var(--dark);
     float: left;
 }
